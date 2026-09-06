@@ -9,8 +9,10 @@
 :root{--bg:#f5f6f8;--surface:#fff;--border:#e1e4e8;--text:#20242c;--muted:#6b7280;--accent:#2f5fd6}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:"Hiragino Sans","Yu Gothic",-apple-system,BlinkMacSystemFont,sans-serif;padding:32px 18px}
-main{max-width:880px;margin:0 auto}
+main{max-width:1100px;margin:0 auto}
 h1{font-size:24px;margin:0 0 6px}
+h2{font-size:19px;margin:30px 0 6px}
+.description{font-size:13px;color:var(--muted);margin:0 0 16px;line-height:1.7}
 .updated{color:var(--muted);font-size:13px;margin:0 0 24px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
 .card{display:flex;flex-direction:column;gap:8px;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:12px;color:inherit;text-decoration:none;box-shadow:0 1px 2px rgba(0,0,0,.03)}
@@ -23,7 +25,7 @@ h1{font-size:24px;margin:0 0 6px}
 </head>
 <body><main>
 <h1>WBS進捗ポータル</h1>
-<p class="updated">最終生成: 2026-09-06 12:33 JST</p>
+<p class="updated">最終生成: 2026-09-06 12:51 JST</p>
 <div class="grid"><a class="card" href="progress.html">
   <strong>担当者別進捗</strong>
   <span>今日の担当、進行中、次のタスク、遅延を確認</span>
@@ -36,6 +38,25 @@ h1{font-size:24px;margin:0 0 6px}
   <strong>キャパシティ</strong>
   <span>担当者別・月別の負荷と空きを確認</span>
 </a></div>
+<h2>システム別 WBS</h2>
+<p class="description">機能ID・画面・API・帳票ごとに、工程とタスクを展開できます。担当者・ステータスでの絞り込みにも対応しています。</p>
+<div class="grid"><a class="card" href="gantt/00.html"><strong>00_システム</strong><span>WBS ガントチャート · 実タスク 62件</span></a>
+<a class="card" href="gantt/01.html"><strong>01_受注客管理</strong><span>WBS ガントチャート · 実タスク 370件</span></a>
+<a class="card" href="gantt/02.html"><strong>02_工事管理</strong><span>WBS ガントチャート · 実タスク 615件</span></a>
+<a class="card" href="gantt/03.html"><strong>03_原価管理</strong><span>WBS ガントチャート · 実タスク 1,301件</span></a>
+<a class="card" href="gantt/04.html"><strong>04_不動産管理</strong><span>WBS ガントチャート · 実タスク 247件</span></a>
+<a class="card" href="gantt/05.html"><strong>05_債権・債務管理</strong><span>WBS ガントチャート · 実タスク 467件</span></a>
+<a class="card" href="gantt/06.html"><strong>06_業績管理</strong><span>WBS ガントチャート · 実タスク 96件</span></a>
+<a class="card" href="gantt/07.html"><strong>07_工場原価</strong><span>WBS ガントチャート · 実タスク 40件</span></a>
+<a class="card" href="gantt/10.html"><strong>10_Σ会計インターフェース</strong><span>WBS ガントチャート · 実タスク 168件</span></a>
+<a class="card" href="gantt/11.html"><strong>11_支払伝票</strong><span>WBS ガントチャート · 実タスク 285件</span></a>
+<a class="card" href="gantt/12.html"><strong>12_マスタ管理</strong><span>WBS ガントチャート · 実タスク 199件</span></a>
+<a class="card" href="gantt/14.html"><strong>14_検索</strong><span>WBS ガントチャート · 実タスク 564件</span></a>
+<a class="card" href="gantt/16.html"><strong>16_請求管理</strong><span>WBS ガントチャート · 実タスク 138件</span></a>
+<a class="card" href="gantt/98.html"><strong>98_バッチ</strong><span>WBS ガントチャート · 実タスク 133件</span></a>
+<a class="card" href="gantt/XX.html"><strong>XX_共通ライブラリ</strong><span>WBS ガントチャート · 実タスク 37件</span></a>
+<a class="card" href="gantt/ZC.html"><strong>全体共通</strong><span>WBS ガントチャート · 実タスク 173件</span></a>
+<a class="card" href="gantt/CF.html"><strong>共通関数</strong><span>WBS ガントチャート · 実タスク 290件</span></a></div>
 <p class="note">このサイトはGitHub Actionsの日次バッチで自動更新されます。表示内容に誤りがある場合は、Slack日報のTask_ID・ステータス・実績時間を確認してください。</p>
 </main></body>
 </html>
